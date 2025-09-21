@@ -1,0 +1,109 @@
+/* Contact Section */
+.contact-section {
+  padding: 80px 20px;
+  background: var(--light-color);
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--dark-color);
+  position: relative;
+}
+
+.contact-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; left: 50%;
+  transform: translateX(-50%);
+  width: 80px; height: 3px;
+  background: var(--secondary-color);
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px rgba(78,159,61,0.3);
+}
+
+#contact-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Confirmation message */
+.confirmation {
+  display: none;
+  color: green;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Map */
+.map-section { padding: 80px 20px; text-align: center; }
+.map-section h2 { margin-bottom: 20px; color: var(--dark-color); }
+
+/* FAQ Accordion */
+.accordion { max-width: 800px; margin: 0 auto; text-align: left; }
+.accordion-item { margin-bottom: 10px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.accordion-header {
+  width: 100%;
+  background: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: left;
+  transition: background 0.3s;
+}
+.accordion-header:hover { background: #4e9f3d; }
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #f9f9f9;
+  padding: 0 20px;
+}
+.accordion-content p { padding: 15px 0; margin: 0; color: var(--dark-color); }
+
+/* Responsive */
+@media(max-width:768px){
+  .contact-section h2, .map-section h2, .accordion-header { font-size: 1.8rem; }
+  #contact-form { padding: 20px; }
+}

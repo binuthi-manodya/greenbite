@@ -1,0 +1,55 @@
+:root {
+  --primary-color: #2d5f27;
+  --secondary-color: #4e9f3d;
+  --accent-color: #97bc62;
+  --light-color: #f0f7e6;
+  --dark-color: #1e3a1f;
+  --text-color: #333333;
+  --light-text: #ffffff;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  height: 100vh; display: flex; align-items: center;
+  background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),
+              url('https://picsum.photos/seed/wellness/1920/1080.jpg');
+  background-size: cover; background-position: center;
+  position: relative; overflow: hidden;
+}
+.hero-content { max-width: 800px; }
+.hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; animation: fadeInUp 1s ease; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; animation: fadeInUp 1s ease 0.2s both; }
+.hero-quote {
+  font-size: 1.5rem; font-style: italic; color: var(--primary-color);
+  margin-bottom: 2rem; min-height: 60px; animation: fadeIn 1.5s ease;
+}
+.hero-buttons { display: flex; gap: 15px; animation: fadeInUp 1s ease 0.4s both; }
+
+/* Workout Form */
+.workout-generator { padding: 60px 20px; background: var(--light-color); text-align: center; }
+.workout-generator .form-group { margin-bottom: 20px; }
+.workout-generator label { display: block; font-weight: 600; margin-bottom: 5px; }
+.workout-generator select { padding: 10px 15px; border-radius: 10px; border: 1px solid #ccc; width: 200px; }
+.workout-generator button.btn { margin-top: 20px; }
+
+/* Workout Result */
+.workout-result { margin-top: 40px; text-align: center; }
+.workout-result ul { list-style: none; padding: 0; }
+.workout-result li { background: white; padding: 12px 20px; margin: 10px 0; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+/* Timer */
+.timer { font-size: 2rem; margin: 20px 0; color: var(--primary-color); }
+#start-timer { margin-top: 15px; }
+
+/* Responsive */
+@media(max-width:768px){
+  .workout-generator select { width: 100%; max-width: 300px; }
+}

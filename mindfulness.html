@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GreenBite - Mindfulness & Meditation">
+  <title>GreenBite | Mindfulness</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="mindfulness.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="home.html" class="nav-logo"><i class="fas fa-leaf"></i> GreenBite</a>
+      <ul class="navbar-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger">
+        <span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Mindfulness & Meditation</h1>
+        <p>Relax your mind, follow guided breathing, and track your meditation sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breathing Animation -->
+  <section class="breathing-section">
+    <div class="container">
+      <h2>Guided Breathing</h2>
+      <div class="breathing-circle" id="breathing-circle"></div>
+      <p id="breathing-text">Inhale...</p>
+    </div>
+  </section>
+
+  <!-- Timer Tool -->
+  <section class="timer-section">
+    <div class="container">
+      <h2>Meditation Timer</h2>
+      <div class="timer-controls">
+        <input type="number" id="timer-minutes" placeholder="Minutes" min="1">
+        <button class="btn" id="start-timer">Start</button>
+        <button class="btn btn-outline" id="stop-timer">Stop</button>
+      </div>
+      <div class="timer-display" id="timer-display">0:00</div>
+      <p>Completed Sessions: <span id="completed-sessions">0</span></p>
+    </div>
+  </section>
+
+  <!-- Ambient Sounds -->
+  <section class="sounds-section">
+    <div class="container">
+      <h2>Ambient Sounds</h2>
+      <button class="btn" id="toggle-sound">Toggle Sound</button>
+      <audio id="ambient-sound" loop>
+        <source src="https://actions.google.com/sounds/v1/ambiences/peaceful_garden.ogg" type="audio/ogg">
+      </audio>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>GreenBite</h3>
+          <p>Your path to wellness through balanced meals, exercise, and mindfulness. Live better, feel better.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="recipe.html">Recipes</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="workout.html">Workouts</a></li>
+            <li><a href="mindfulness.html">Mindfulness</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get wellness tips, recipes, and workout plans delivered to your inbox.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 GreenBite. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="mindfulness.js"></script>
+</body>
+</html>

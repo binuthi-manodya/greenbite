@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GreenBite - Delicious & Healthy Recipes">
+  <title>GreenBite | Recipes</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+        <a href="home.html" class="nav-logo">
+            <i class="fas fa-leaf"></i> GreenBite</a>
+      <ul class="navbar-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Delicious & Healthy Recipes</h1>
+        <p>Explore a variety of recipes designed to nourish your body and delight your taste buds.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipes Grid -->
+  <section class="recipes">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Top Recipes</h2>
+      </div>
+      <div class="recipes-grid">
+        <!-- Recipe Card 1 (correct) -->
+        <div class="recipe-card" data-id="1">
+          <img src="https://cdn.loveandlemons.com/wp-content/uploads/2024/07/avocado-salad.jpg" alt="Avocado Salad">
+          <h3>Avocado Salad</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 2 (incorrect: broken image) -->
+        <div class="recipe-card" data-id="2">
+          <img src="https://www.cookedandloved.com/wp-content/uploads/2023/07/mediterranean-chicken-quinoa-bowl-social.jpg" alt="Quinoa Bowl">
+          <h3>Quinoa Bowl</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 3 (incorrect: missing button) -->
+        <div class="recipe-card" data-id="3">
+          <img src="https://naturallieplantbased.com/wp-content/uploads/2023/01/IMG_4265_11zon.jpg" alt="Smoothie Bowl">
+          <h3>Smoothie Bowl</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 4 (correct) -->
+        <div class="recipe-card" data-id="4">
+          <img src="https://www.skinnytaste.com/wp-content/uploads/2019/06/Grilled-Vegetable-Platter-with-Yogurt-Mint-Sauce-6.jpg" alt="Grilled Veggies">
+          <h3>Grilled Veggies</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 5 (incorrect: missing alt) -->
+        <div class="recipe-card" data-id="5">
+          <img src="https://www.recipetineats.com/tachyon/2025/05/Afghani-Chickpea-Curry_0.jpg" alt="Smoothie Bowl">
+          <h3>Chickpea Curry</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 6 (correct) -->
+        <div class="recipe-card" data-id="6">
+          <img src="https://becs-table.com.au/wp-content/uploads/2020/03/Middle-eastern-grain-salad-1200-500x500.jpg" alt="Grain Salad">
+          <h3>Grain Salad</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 7 (incorrect: empty title) -->
+        <div class="recipe-card" data-id="7">
+          <img src="https://diabetesstrong.com/wp-content/uploads/2021/10/grilled-veggie-wraps-8.jpg" alt="Veggie Wrap">
+          <h3>Veggie Wrap</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 8 (correct) -->
+        <div class="recipe-card" data-id="8">
+          <img src="https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2019/02/Lentil-Vegetable-Soup-1200.jpg" alt="Lentil Soup">
+          <h3>Lentil Soup</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 9 (incorrect: broken link) -->
+        <div class="recipe-card" data-id="9">
+          <img src="https://feelgoodfoodie.net/wp-content/uploads/2024/11/Fruit-Yogurt-Parfait-11.jpg" alt="Fruit Parfait">
+          <h3>Fruit Parfait</h3>
+          <a href="brokenlink.html" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 10 (correct) -->
+        <div class="recipe-card" data-id="10">
+          <img src="https://www.twopurplefigs.com/wp-content/uploads/2016/06/Chocolate-Oatmeal-Breakfast-Bowl-1.jpg" alt="Oatmeal Bowl">
+          <h3>Oatmeal Bowl</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 11 (incorrect: missing image) -->
+        <div class="recipe-card" data-id="11">
+          <img src="https://kristineskitchenblog.com/wp-content/uploads/2023/12/chia-seed-pudding-09-4.jpg" alt="Chia seed pudding">
+          <h3>Chia seed pudding</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+
+        <!-- Recipe Card 12 (correct) -->
+        <div class="recipe-card" data-id="12">
+          <img src="https://www.recipetineats.com/tachyon/2025/05/Afghani-Chickpea-Curry_0.jpg" alt="Berry Smoothie">
+          <h3>Berry Smoothie</h3>
+          <a href="#" class="btn btn-outline">View Recipe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipe Modal -->
+  <div class="recipe-modal" id="recipe-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Recipe Title</h2>
+      <h3>Ingredients</h3>
+      <ul id="modal-ingredients"></ul>
+      <h3>Steps</h3>
+      <ol id="modal-steps"></ol>
+      <h3>Nutrition Info</h3>
+      <table id="modal-nutrition">
+        <thead>
+          <tr>
+            <th>Nutrient</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>GreenBite</h3>
+        <p>Your path to wellness through balanced meals, exercise, and mindfulness. Live better, feel better.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+            <li><a href="recipe.html">Recipes</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="workout.html">Workouts</a></li>
+            <li><a href="mindfulness.html">Mindfulness</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get wellness tips, recipes, and workout plans delivered to your inbox.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 GreenBite. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- JS -->
+  <script src="recipe.js"></script>
+</body>
+</html>

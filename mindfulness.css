@@ -1,0 +1,58 @@
+/* Breathing Section */
+.breathing-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--light-color);
+}
+
+.breathing-circle {
+  width: 150px;
+  height: 150px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  transition: all 4s ease-in-out;
+}
+
+#breathing-text {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+}
+
+/* Timer Section */
+.timer-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f0f7f5;
+}
+
+.timer-display {
+  font-size: 3rem;
+  margin: 20px 0;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.timer-controls input {
+  width: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.timer-controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* Sounds Section */
+.sounds-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--light-color);
+}
+
+.sounds-section button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
